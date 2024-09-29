@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Feriados"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/et_nome_feriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Feriado" />
+
+    <EditText
+        android:id="@+id/et_data_feriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data (YYYY-MM-DD)"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <Spinner
+        android:id="@+id/spinner_tipo_feriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado (se aplicável)" />
+
+    <EditText
+        android:id="@+id/et_municipio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Município (se aplicável)" />
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Feriado" />
+
+    <Button
+        android:id="@+id/btn_visualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Feriados" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_feriados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
